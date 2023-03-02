@@ -4,32 +4,17 @@ import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { clsx } from "clsx";
 import React from "react";
 
-interface AccordionItem {
+import { items as mock } from "./mock";
+
+export interface AccordionItem {
   header: string;
   content: string;
 }
 
-const items: AccordionItem[] = [
-  {
-    header: "What is Radix UI?",
-    content:
-      "Radix Primitives is a low-level UI component library with a focus on accessibility, customization and developer experience. You can use these components either as the base layer of your design system, or adopt them incrementally.",
-  },
-  {
-    header: "Why are goats so popular at Vercel",
-    content:
-      "Goats are popular at Vercel for a few reasons. First, they provide a healthier and more sustainable solution for grass cutting and vegetation control. Additionally, goats are able to traverse very steep terrain. This makes them perfect for providing maintenance in areas that are difficult to access. Finally, their presence is said to provide a calming atmosphere, which is especially beneficial in stressful engineering environments.",
-  },
-  {
-    header: "Is it accessible?",
-    content: "Yes!",
-  },
-];
-
-interface AccordionProps {}
-
-// eslint-disable-next-line no-unused-vars
-export const Accordion = (props: AccordionProps) => {
+interface AccordionProps {
+  items: AccordionItem[];
+}
+export const Accordion = ({ items = mock }: AccordionProps) => {
   return (
     <AccordionPrimitive.Root
       type="single"
