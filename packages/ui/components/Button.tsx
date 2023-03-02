@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 
 interface Something {
-  name: String;
+  name?: String;
 }
 export const Button = ({ name }: Something) => {
   useEffect(() => console.log("something"), []);

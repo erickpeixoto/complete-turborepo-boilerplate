@@ -13,7 +13,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
     "test": "turbo run test",
-    "test:watch": "turbo run test:watch"
+    "test:watch": "turbo run test:watch",
+    "generate:db": "turbo run db:generate",
+    "generate:push": "turbo run db:push"
   },
   "devDependencies": {
     "husky": "^8.0.0",
