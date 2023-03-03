@@ -1,5 +1,6 @@
 import "../../styles/global.css";
 
+import { PrismaClient } from "database";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { Accordion, Button } from "ui";
@@ -8,7 +9,10 @@ import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default async function Home() {
+  const prisma = new PrismaClient();
+  const users = await prisma.user.findMany();
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -16,6 +20,15 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
+        <div>
+          <h1>Users</h1>
+          {users.map(({ id, name, email }) => (
+            <div key={id}>
+              <div>{name}</div>
+              <div>{email}</div>
+            </div>
+          ))}
+        </div>
         <div>
           <Button name="something" />
         </div>
