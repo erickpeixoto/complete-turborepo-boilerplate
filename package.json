@@ -15,16 +15,33 @@
     "test": "turbo run test",
     "test:watch": "turbo run test:watch",
     "generate:db": "turbo run db:generate",
-    "generate:push": "turbo run db:push"
+    "generate:push": "turbo run db:push",
+    "storybook:dev": "turbo run storybook:dev --parallel"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
+    "esbuild": "^0.14.10",
     "husky": "^8.0.0",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
-    "turbo": "latest"
+    "storybook": "^6.5.16",
+    "turbo": "latest",
+    "webpack": "^5.75.0"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@storybook/addon-postcss": "^2.0.0"
   }
 }

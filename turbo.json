@@ -23,6 +23,9 @@
     },
     "db:push": {
       "cache": false
+    },
+    "storybook:dev": {
+      "cache": false
     }
   }
 }

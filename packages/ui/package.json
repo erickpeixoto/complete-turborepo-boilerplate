@@ -1,18 +1,29 @@
 {
   "name": "ui",
   "version": "0.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
+  "main": "./index.ts",
+  "types": "./index.ts",
   "license": "MIT",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "storybook:dev": "start-storybook -p 6006"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "tsconfig": "*",
+    "babel-loader": "^8.3.0",
     "config": "*",
+    "tsconfig": "*",
     "typescript": "^4.5.3"
   },
   "dependencies": {
@@ -46,6 +57,13 @@
     "@radix-ui/react-toggle-group": "^1.0.2",
     "@radix-ui/react-toolbar": "^1.0.2",
     "@radix-ui/react-tooltip": "^1.0.3",
-    "clsx": "^1.2.1"
+    "clsx": "^1.2.1",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.3.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  },
+  "resolutions": {
+    "webpack": "^5"
   }
 }
