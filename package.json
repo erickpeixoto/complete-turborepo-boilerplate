@@ -16,7 +16,8 @@
     "test:watch": "turbo run test:watch",
     "generate:db": "turbo run db:generate",
     "generate:push": "turbo run db:push",
-    "storybook:dev": "turbo run storybook:dev --parallel"
+    "storybook:dev": "turbo run storybook:dev --parallel",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
