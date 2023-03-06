@@ -5,7 +5,7 @@ import { Button } from "../components/";
 
 //create a story for the Button component
 export default {
-  title: "Example/Button",
+  title: "UI/Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },

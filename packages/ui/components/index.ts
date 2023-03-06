@@ -1,6 +1,6 @@
 import "../styles/global.css";
 
-import { Accordion } from "./Accordion";
+export * from "./Accordion";
 import { Button } from "./Button";
 
-export { Accordion, Button };
+export { Button };

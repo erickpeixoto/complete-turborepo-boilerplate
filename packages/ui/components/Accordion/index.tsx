@@ -6,7 +6,7 @@ import React from "react";
 
 import { items as mock } from "./mock";
 
-export interface AccordionItem {
+interface AccordionItem {
   header: string;
   content: string;
 }
@@ -14,7 +14,7 @@ export interface AccordionItem {
 interface AccordionProps {
   items: AccordionItem[];
 }
-export const Accordion = ({ items = mock }: AccordionProps) => {
+const Accordion = ({ items = mock }: AccordionProps) => {
   return (
     <AccordionPrimitive.Root
       type="single"
@@ -57,3 +57,6 @@ export const Accordion = ({ items = mock }: AccordionProps) => {
     </AccordionPrimitive.Root>
   );
 };
+
+export { Accordion, mock };
+export type { AccordionItem, AccordionProps };

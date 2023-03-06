@@ -8,9 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --passWithNoTests",
-    "test:watch": "jest --watch",
-    "storybook:dev": "start-storybook -p 6007",
-    "build-storybook": "build-storybook"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@types/node": "18.14.2",
@@ -25,14 +23,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack5": "^6.5.16",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/testing-library": "^0.0.13",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.3.0",
     "config": "*",

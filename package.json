@@ -43,6 +43,7 @@
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "@storybook/addon-postcss": "^2.0.0"
+    "@storybook/addon-postcss": "^2.0.0",
+    "class-variance-authority": "^0.4.0"
   }
 }
